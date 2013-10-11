@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<RelativeLayout 
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<Button
+    android:id="@+id/sales"
+    android:onClick="myClickHandler"
+    android:layout_marginTop="50dip"
+    android:layout_width="150dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/sales"
+    />
+
+<Button
+    android:id="@+id/send_data"
+    android:onClick="myClickHandler"
+    android:layout_below="@id/sales"  
+    android:layout_marginTop="50dip"
+    android:layout_width="150dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/send_data"
+    />
+
+<Button
+    android:id="@+id/receive_data"
+    android:onClick="myClickHandler"
+    android:layout_below="@id/send_data"  
+    android:layout_marginTop="50dip"
+    android:layout_width="150dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/receive_data"
+    />
+
+<Button
+    android:id="@+id/config"
+    android:onClick="myClickHandler"
+    android:layout_below="@id/receive_data"  
+    android:layout_marginTop="50dip"
+    android:layout_width="150dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/config"
+    />
+
+</RelativeLayout>
+<FrameLayout
+    android:id="@+id/progress_bar"
+    android:visibility="invisible"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    android:gravity="center_horizontal"
+    />
+</FrameLayout>
+</FrameLayout>

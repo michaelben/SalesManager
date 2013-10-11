@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <com.hubblewave.salesmanager.NoDefaultSpinner android:id="@+id/category_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerRojo"
+            android:prompt="@string/category_prompt"/>
+
+        <com.hubblewave.salesmanager.NoDefaultSpinner android:id="@+id/product_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_spinner"  
+            style="@style/SpinnerRojo"
+            android:prompt="@string/product_prompt"/>
+        
+        <Button
+    android:id="@+id/qty"
+    android:onClick="myClickHandler"
+    android:layout_below="@id/product_spinner"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="10dip"
+    android:layout_width="80dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/qty"
+    />
+        
+        <Button
+    android:id="@+id/minus"
+    android:onClick="myClickHandler"
+    android:layout_below="@id/product_spinner"  
+    android:layout_toLeftOf="@id/qty"
+    android:layout_marginTop="10dip"
+    android:layout_width="60dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/minus"
+    />
+        
+        <Button
+    android:id="@+id/plus"
+    android:onClick="myClickHandler"
+    android:layout_below="@id/product_spinner"  
+    android:layout_toLeftOf="@id/minus"
+    android:layout_marginTop="10dip"
+    android:layout_width="60dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/plus"
+    />
+        
+                        <TextView android:id="@+id/listheader_desr"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:layout_marginTop="20dip"
+                android:layout_alignParentLeft="true"
+            android:layout_below="@id/plus"
+            android:text="@string/listheader_desr"/>
+                
+                        <TextView android:id="@+id/listheader_qty"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:layout_marginTop="20dip"
+            android:layout_below="@id/plus"
+            android:layout_toRightOf="@id/listheader_desr"
+            android:gravity="right"
+            android:text="@string/listheader_qty"/>
+                        
+                        <TextView android:id="@+id/listheader_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:layout_marginTop="20dip"
+            android:layout_below="@id/plus"
+            android:layout_toRightOf="@id/listheader_qty"
+                        android:gravity="right"
+            android:text="@string/listheader_price"/>
+                        
+        <ListView android:id="@+id/order_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:listSelector="#00000000"
+                android:layout_below="@id/listheader_price"/>
+        
+
+        
+                <TextView android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_marginTop="50dip"
+                android:layout_alignParentRight="true"
+            android:layout_below="@id/order_list"
+            android:text="@string/total_default"/>
+                
+                        <TextView android:id="@+id/total_amount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_marginTop="50dip"
+            android:layout_below="@id/order_list"
+            android:layout_toLeftOf="@id/total_amount"
+            android:text="@string/total_amount"/>
+                
+    
+<Button
+    android:id="@+id/save"
+    android:onClick="myClickHandler"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="10dip"
+    android:layout_width="150dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/save"
+    />
+
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/qty_layout"
+    android:visibility="invisible"
+       android:layout_width="300dip"
+    android:layout_height="200dip"
+    android:layout_gravity="center"
+    android:background="#A0000000"
+    >
+    
+	<TextView
+	    android:id="@+id/qty_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:textStyle="bold"
+            android:textSize="25dip"
+                android:layout_alignParentTop="true"
+            android:text="@string/qty_prompt"/>
+	<EditText android:id="@+id/qty_input"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+            android:layout_margin="10dip"
+            android:inputType="phone"
+			android:digits="1234567890."
+            android:layout_below="@id/qty_prompt"/>
+                                    
+    <Button
+    android:id="@+id/button_ok"
+    android:onClick="myClickHandler"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="20dip"
+    android:layout_width="50dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" 
+    android:gravity="center_horizontal" 
+    android:text="@string/button_ok"
+    />
+</RelativeLayout>
+</FrameLayout>

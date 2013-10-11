@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextviewVerde" >
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">5pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextviewRosa" >
+        <item name="android:textColor">#5F04B4</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">15pt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditviewAzul"  >
+        <item name="android:textColor">#0000FF</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#0000FF</item>       
+    </style>
+
+    <style name="SpinnerRojo"  > 
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#DF0101</item>
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">11pt</item>
+        <item name="android:drawSelectorOnTop">true</item>
+
+    </style>
+
+    <style name="BotonBlanco">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12pt</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:clickable">true</item>     
+     </style>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+</resources>

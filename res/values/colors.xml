@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="red">#ff0000</color>
+<color name="green">#00ff00</color>
+<color name="blue">#0000ff</color>
+<color name="yellow">#ffff00</color>
+<color name="magenta">#ff00ff</color>
+<color name="fuchia">#ff00ff</color>
+<color name="pink">#ff00ff</color>
+<color name="cyan">#00ffff</color>
+<color name="aqua">#00ffff</color>
+<color name="shallow_blue">#00ffff</color>
+
+<color name="black">#000000</color>
+<color name="gray1">#333333</color>
+<color name="gray2">#505050</color>
+<color name="gray3">#666666</color>
+<color name="gray4">#7B7B7B</color>
+<color name="gray5">#898989</color>
+<color name="gray6">#999999</color>
+<color name="gray7">#ABABAB</color>
+<color name="gray8">#B4B4B4</color>
+<color name="gray9">#BCBCBC</color>
+<color name="gray10">#CCCCCC</color>
+<color name="gray11">#DCDCDC</color>
+<color name="gray12">#E3E3E3</color>
+<color name="gray13">#EBEBEB</color>
+<color name="gray14">#F4F4F4</color>
+<color name="white">#ffffff</color>
+
+
+<color name="green1">#A2C52D</color>
+<color name="green2">#74AC00</color>
+<color name="red1">#FB5137</color>
+<color name="red2">#EA280C</color>
+<drawable name="orange">#ffffbb33</drawable>
+
+<color name="titlecolor1">#99CCCC</color>
+<color name="titlecolor2">#728AA6</color>
+<color name="cardcolor1">#626E7C</color>
+<color name="cardcolor2">#FFFFFF</color>
+<color name="bottomcolor1">#848587</color>
+<color name="bottomcolor2">#3C3D3F</color>
+
+<color name="fulltime_color">@color/red</color>
+<color name="evenings_color">#00ff44</color>
+<color name="weekends_color">#ff33ff</color>
+
+<color name="appwidget_text">#ffffffff</color>
+</resources>

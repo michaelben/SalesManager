@@ -1,0 +1,27 @@
+<Categories>
+	<Category>
+		<Id>1</Id>
+		<Code>0.0.1B</Code>
+		<Name>My First Category</Name>
+	</Category>
+	<Category>
+		<Id>2</Id>
+		<Code>0.0.2B</Code>
+		<Name>My second Category</Name>
+	</Category>
+	<Category>
+		<Id>3</Id>
+		<Code>0.0.3B</Code>
+		<Name>My third Category</Name>
+	</Category>
+	<Category>
+		<Id>4</Id>
+		<Code>0.0.4B</Code>
+		<Name>My 4th Category</Name>
+	</Category>
+	<Category>
+		<Id>5</Id>
+		<Code>0.0.5B</Code>
+		<Name>My 5th Category</Name>
+	</Category>
+</Categories>

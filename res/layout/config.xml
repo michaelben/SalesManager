@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RadioGroup android:id="@+id/radio_group"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal">
+		  
+		  <RadioButton android:id="@+id/ftp"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:checked="true"
+		      android:text="@string/ftp" />
+		  
+		  <RadioButton android:id="@+id/sdcard"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:text="@string/sdcard" />
+    </RadioGroup>
+      
+<RelativeLayout
+    android:id="@+id/ftp_layout"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/radio_group" 
+    >
+    <RadioGroup android:id="@+id/radio_group_passive"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal">
+		  
+		  <RadioButton android:id="@+id/isPassive"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:checked="true"
+		      android:text="@string/isPassive" />
+		  
+		  <RadioButton android:id="@+id/isActive"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:text="@string/isActive" />
+    </RadioGroup>   
+<TextView
+    android:id="@+id/upload_server_label"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group_passive"
+    android:text="@string/upload_server"
+    />
+
+<EditText
+    android:id="@+id/upload_server"
+    android:layout_below="@id/upload_server_label"  
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:hint="@string/upload_hint"
+    android:inputType="textUri"
+    />
+    <RadioGroup android:id="@+id/radio_group_append"
+        android:layout_marginLeft="100dip"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/upload_server"  
+		  android:orientation="horizontal">
+		  
+          <RadioButton android:id="@+id/isReplace"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:checked="true"
+		      android:text="@string/isReplace" />
+		  <RadioButton android:id="@+id/isAppend"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:text="@string/isAppend" />
+    </RadioGroup>   
+<TextView
+    android:id="@+id/download_server_label"
+    android:layout_below="@id/radio_group_append"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="@string/download_server"
+    />
+
+<EditText
+    android:id="@+id/download_server"
+    android:layout_below="@id/download_server_label"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:hint="@string/download_hint"
+            android:inputType="textUri"
+    />
+
+<TextView
+    android:id="@+id/username_label"
+    android:layout_below="@id/download_server"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="@string/username"
+    />
+
+<EditText
+    android:id="@+id/username"
+    android:layout_below="@id/username_label"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:hint="@string/username_hint"
+    />
+
+<TextView
+    android:id="@+id/password_label"
+    android:layout_below="@id/username"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="@string/password"
+    />
+
+<EditText
+    android:id="@+id/password"
+    android:layout_below="@id/password_label"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:hint="@string/password_hint"
+    />
+
+<TextView
+    android:id="@+id/remote_folder_label"
+    android:layout_below="@id/password"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="@string/remote_folder_label"
+    />
+
+<EditText
+    android:id="@+id/remote_folder"
+    android:layout_below="@id/remote_folder_label"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/remote_folder_hint"
+    />
+</RelativeLayout>
+<Button
+    android:id="@+id/save"
+    android:onClick="myClickHandler"
+    android:layout_alignParentBottom="true"  
+    android:layout_alignParentRight="true"  
+    android:layout_width="150dip" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/s_blue_button"
+    android:gravity="center_horizontal" 
+    android:text="@string/save"
+    />
+</RelativeLayout>

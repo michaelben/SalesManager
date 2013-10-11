@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <Button android:text="Button" android:id="@+id/button1" style="@style/ButtonText" android:background="@drawable/btn_army_glossy"></Button>
+    <Button android:text="Button" android:id="@+id/button2" style="@style/ButtonText" android:background="@drawable/btn_blue_glossy"></Button>
+    <Button android:text="Button" android:id="@+id/button3" style="@style/ButtonText" android:background="@drawable/btn_blue_pink_glossy"></Button>
+    <Button android:text="Button" android:id="@+id/button4" style="@style/ButtonText" android:background="@drawable/btn_green_glossy"></Button>
+    <Button android:text="Button" android:id="@+id/button5" style="@style/ButtonText" android:background="@drawable/btn_lightblue_glossy"></Button>
+    <Button android:text="Button" android:id="@+id/button6" style="@style/ButtonText" android:background="@drawable/btn_pink_glossy"></Button>
+</LinearLayout>

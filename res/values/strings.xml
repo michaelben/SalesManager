@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sales App</string>
+    <string name="sr_title">Sales App</string>
+    
+    <string name="sales">Sales</string>
+    <string name="send_data">Send Data</string>
+    <string name="receive_data">Receive Data</string>
+    <string name="config">Configuration</string>  
+    <string name="ftp">FTP Import/Export</string>  
+    <string name="sdcard">SDCard</string>  
+    <string name="isPassive">Passive Mode</string>
+    <string name="isActive">Active Mode</string>
+    <string name="isAppend">Append</string>
+    <string name="isReplace">Replace</string>
+    <string name="remote_folder_label">Remote Folder</string>
+    <string name="remote_folder_hint">default is root</string>
+    <string name="upload_server">Upload Server</string>  
+    <string name="download_server">Download Server</string>  
+    <string name="save">Save</string>  
+    
+    <string name="customers_title">Customers</string>
+        <string name="customers_hint">type to filter</string>
+        <string name="separator">-</string>
+        <string name="button_ok">OK</string>
+        <string name="qty_prompt">Input Quantity</string>
+    <string name="category_prompt">Select Category</string>
+    <string name="product_prompt">Select Product</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="qty">Qty</string>
+    <string name="total_amount">Total Amount:</string>
+    <string name="total_default">0.00</string>
+    <string name="salesorder_title">Sales Order</string>
+    
+    <string name="listheader_desr">Description</string>
+    <string name="listheader_qty">Quantity</string>
+    <string name="listheader_price">Price</string>
+    
+    <string name="upload_hint">ftp.yourdomain.com</string>
+    <string name="download_hint">ftp.yourdomain.com</string>
+     <string name="username">User Name</string>
+     <string name="password">Password</string>
+          <string name="username_hint">input your username here</string>
+     <string name="password_hint">input your password here</string>
+</resources>
